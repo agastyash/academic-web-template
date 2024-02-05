@@ -8,8 +8,8 @@ Simple Django-based website template for academic organizations and companies.
 - [Pillow](https://pypi.org/project/pillow/)
 
 ## Screenshots
-![academysite_1](https://github.com/agastyash/academic-web-template/assets/45848089/507aea27-65b8-46fe-869a-6c6cddb22e7d)
-![academysite_2](https://github.com/agastyash/academic-web-template/assets/45848089/06b64f24-c4d1-4c6b-a137-317f8911945f)
-![academysite_3](https://github.com/agastyash/academic-web-template/assets/45848089/46e8197e-3f49-4abd-b215-dd6cad4980b3)
-![academysite_4](https://github.com/agastyash/academic-web-template/assets/45848089/b3a7b8ad-1c43-4988-83e6-532387719d90)
-![academysite_5](https://github.com/agastyash/academic-web-template/assets/45848089/334f8939-bdfb-449a-9583-31c508351ed6)
+![academysite_1](https://github.com/agastyash/academic-web-template/assets/45848089/2dc1fb88-efc6-4967-8dd9-7670100cb903)
+![academysite_2](https://github.com/agastyash/academic-web-template/assets/45848089/9daa9ce6-c2ec-446a-a420-488b310c427e)
+![academysite_3](https://github.com/agastyash/academic-web-template/assets/45848089/a842037f-696f-40d1-8189-7d9f2ae50660)
+![academysite_4](https://github.com/agastyash/academic-web-template/assets/45848089/ab1a6869-4b1c-4a37-a78d-a4cac4ad8e26)
+![academysite_5](https://github.com/agastyash/academic-web-template/assets/45848089/0183e369-69de-40a4-9c73-709625da6db5)
