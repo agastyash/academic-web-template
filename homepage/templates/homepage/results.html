@@ -1,0 +1,42 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+
+    <!-- Results-->
+    <section class="bg-light py-5">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Latest Results</h2>
+            </div>
+            <div class="row gx-5 justify-content-center mb-4">
+            {% if result_list %}
+            {% for item in result_list %}
+                <div class="col-lg-6 mb-3">
+                    <div class="card mb-5 mb-xl-0">
+                        <div class="card-body p-5">
+                            <div class="lead text-uppercase fw-bold text-center">{{ item.caption|linebreaks }}</div>
+                            <img class="img-fluid img-thumbnail d-block w-100" src="{{ item.image.url }}">
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            {% else %}
+            <div class="col-lg-6 col-xl-4 mb-3">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="lead text-uppercase fw-bold">None Available</div>
+                        <ul style="height: 300px;" class="list-unstyled mb-4 overflow-auto">
+                            <li class="mb-2">
+                                <p>No results are currently available.</p>
+                            </li>
+                        </ul>
+                        <div class="d-grid"><a class="btn btn-outline-primary" href="contact">Contact Us</a></div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+
+    <!-- Courses-->
+    <!--Pricing section-->
+    <section class="bg-light py-5 border-bottom">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Featured Courses</h2>
+                <p class="lead mb-0">Miau!</p>
+            </div>
+            <div class="row gx-5 justify-content-center mb-4">
+            {% if course_list %}
+            {% for item in course_list %}
+                <div class="col-lg-6 col-xl-4 mb-3">
+                    <div class="card mb-5 mb-xl-0">
+                        <div class="card-body p-5">
+                            <div class="fw-bold text-muted">{{ item.target }}</div>
+                            <span class="display-6 fw-bold">{{ item.title }}</span>
+                            <ul style="height: 300px;" class="list-unstyled mb-4 overflow-auto">
+                                <li class="mb-2">
+                                    <p>{{ item.description|linebreaks }}</p>
+                                </li>
+                            </ul>
+                            <div class="d-grid"><a class="btn btn-outline-primary" href="contact">Choose course</a></div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+            {% else %}
+            <div class="col-lg-6 col-xl-4 mb-3">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="lead text-uppercase fw-bold">No courses available</div>
+                        <ul style="height: 300px;" class="list-unstyled mb-4 overflow-auto">
+                            <li class="mb-2">
+                                <p>No courses are currently available.</p>
+                            </li>
+                        </ul>
+                        <div class="d-grid"><a class="btn btn-outline-primary" href="contact">Contact Us</a></div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            </div>
+        </div>
+    </div>
+    </section>
+
+{% endblock %}

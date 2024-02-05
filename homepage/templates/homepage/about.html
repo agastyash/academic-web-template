@@ -1,0 +1,77 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+{% load static %}
+
+    <!-- About-->
+    <section class="py-5 border-bottom" id="about">
+        <div class="container">
+            <div class="row gx-lg-5 justify-content-center">
+                <div class="col-lg-6 py-2">
+                    <div class="border border rounded-3 px-5">
+                        <div class="text-center mt-5 mb-3">
+                            <h1 class="fw-bolder">Our Mission</h1>
+                        </div>
+                        <div class="container">
+                            <div class="row gx-5 justify-content-center">
+                                <div class="col-lg-6">
+                                    <div class="text-center mb-2">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo dolor. Nulla pretium convallis nibh. Vestibulum et purus viverra, vehicula nibh vel, porttitor mi. Suspendisse tincidunt ante et sem commodo, et sagittis justo pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse ut risus nunc. Pellentesque varius elit vel lectus venenatis dignissim. Morbi tortor risus, elementum tincidunt tortor quis, aliquet hendrerit urna. Nulla at leo hendrerit quam sodales rhoncus. Morbi congue magna viverra nulla iaculis scelerisque. Quisque luctus mollis semper. Maecenas in lacinia risus, ac consequat nulla. Nulla eget facilisis justo. Pellentesque et eros odio. Nam interdum bibendum odio at fermentum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-center mb-2">
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec commodo dolor. Nulla pretium convallis nibh. Vestibulum et purus viverra, vehicula nibh vel, porttitor mi. Suspendisse tincidunt ante et sem commodo, et sagittis justo pulvinar. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse ut risus nunc. Pellentesque varius elit vel lectus venenatis dignissim. Morbi tortor risus, elementum tincidunt tortor quis, aliquet hendrerit urna. Nulla at leo hendrerit quam sodales rhoncus. Morbi congue magna viverra nulla iaculis scelerisque. Quisque luctus mollis semper. Maecenas in lacinia risus, ac consequat nulla. Nulla eget facilisis justo. Pellentesque et eros odio. Nam interdum bibendum odio at fermentum.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-center mb-2">
+                                    <p>
+                                        Integer cursus sem sed ipsum dignissim pretium. Sed enim velit, posuere ut sagittis non, rhoncus nec leo. Donec ac leo facilisis, tempus leo id, consequat orci. Nulla vestibulum ex a lacinia ornare. Duis et elit sem. Integer quis feugiat quam, in eleifend risus. Mauris pellentesque mi augue, quis aliquet felis ullamcorper ut. Nam aliquet enim at risus ultrices tempor. Pellentesque finibus leo vitae tellus ornare bibendum. Nam porttitor ultrices justo, non aliquet ipsum. Nulla id facilisis massa, eget condimentum elit. Donec tristique libero eget lo.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="text-center mb-2">
+                                    <p>
+                                        Vivamus eget aliquet nunc. Donec vel est ligula. Duis sapien velit, blandit eu nunc in, dignissim dapibus mauris. Quisque neque dui, dictum sit amet euismod ut, varius finibus est. Donec eu nisl velit. Pellentesque ultrices vestibulum volutpat. Integer tincidunt nisi eu consectetur rhoncus. In quis dolor ut sapien interdum sollicitudin vitae non urna. Vivamus venenatis hendrerit egestas. Nunc eleifend justo mauris, in efficitur mauris imperdiet ac. Curabitur feugiat imperdiet tortor, vitae tempor nunc sagittis a. Duis sit amet est pellentesque, viverra enim sed, semper nisi. Nunc quis tortor id lectus bibendum dapibus nec at justo. Sed elit dolor, iaculis vel augue nec, facilisis semper ante.
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 py-2">
+                    <div class="container bg-light border border-light rounded-3 px-5">
+                        <div class="text-center mt-5">
+                            <h1 class="fw-bolder mb-3">Our Faculty</h1>
+                        </div>
+                        <div class="container mt-5">
+                            <div class="row gx-5 justify-content-center mb-4">
+                                {% if teacher_list %}
+                                {% for teacher in teacher_list %}
+                                    <div class="col-6 mb-3">
+                                        <div class="card mb-5 border-0 shadow">
+                                            <div class="card-body p-3">
+                                                <img class="img-fluid shadow-sm rounded-circle border mb-4 mb-lg-3" src="{{ teacher.image.url }}" alt="An image of {{ teacher.name }}">    
+                                                <div class="h6 text-muted text-center">{{ teacher.name }}</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                                {% else %}
+                                    Teacher Data Unavailable
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

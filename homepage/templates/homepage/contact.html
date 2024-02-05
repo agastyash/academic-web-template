@@ -1,0 +1,105 @@
+{% extends "homepage/base.html" %}
+{% block content %}
+
+    <!-- Contacts-->
+    <section class="py-5" style="margin: auto 0;" id="contact">
+        <div class="container px-5 my-5">
+            <div class="row gx-3 text-center">
+                <div class="bg-light contactform col-lg-9 px-5 pb-5 mb-5 mb-lg-0 order-1 border-light rounded-4">
+                    <div class="mt-5 mb-4"><h2>Contact Form</h2><small class="text-muted inline">Redirects to a <a href="https://docs.google.com/forms" class="text-decoration-none text-primary">Google Forms page</a></small></div>
+                    <form style="max-width: 100%;" action="https://docs.google.com/forms/" method="GET">
+                        <div class="row">
+                            <div class="col-lg-5">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Student's Name:</label>
+                                    <input type="text" class="form-control" id="name" name="">
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="mb-3">
+                                    <label for="grade" class="form-label">Grade:</label>
+                                    <input type="text" class="form-control" id="grade" name="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="mobile" class="form-label">Student's Mobile Number:</label>
+                                    <input type="text" class="form-control" id="mobile" name="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email ID for Communication:</label>
+                                    <input type="text" class="form-control" id="email" name="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Looking for training in:</label><br>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="" value="English" id="englishCheck">
+                              <label class="form-check-label" for="englishCheck">English</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="" value="Mathematics" id="mathCheck">
+                              <label class="form-check-label" for="mathCheck">Mathematics</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="" value="Science" id="scienceCheck">
+                              <label class="form-check-label" for="scienceCheck">Science</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="mb-3">
+                                    <label for="address" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="address" name="">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="mb-3">
+                                    <label for="country" class="form-label">Country:</label>
+                                    <select class="form-select" id="country" name="">
+                                        <option disabled selected hidden>Select a Country</option>
+                                        <option value="Australia">USA</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Germany">Germany</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <button type="submit" style="min-width: 20%;" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="align-self-center col-lg-3 my-5 mb-lg-0">
+                    <div class="container">
+                        <div class="row gx-1">
+                            <div class="col-lg-12 col-4 mb-lg-4">
+                                <a class="text-decoration-none" href="https://messenger.facebook.com">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-2"><i class="bi bi-messenger"></i></div>
+                                    <h2 class="h5">DM us on <div class="fw-bolder">Messenger</div></h2>
+                                </a>
+                            </div>
+                            <div class="col-lg-12 col-4 mb-lg-4">
+                                <a class="text-decoration-none" href="mailto:academy@academy.com">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-2"><i class="bi bi-envelope-at-fill"></i></div>
+                                    <h2 class="h5">Send us an <div class="fw-bolder">Email</div></h2>
+                                </a>
+                            </div>
+                            <div class="col-lg-12 col-4">
+                                <a class="text-decoration-none" href="https://facebook.com/academy">
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-2"><i class="bi bi-facebook"></i></div>
+                                    <h2 class="h5">Visit us on<div class="fw-bolder">Facebook</div></h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
